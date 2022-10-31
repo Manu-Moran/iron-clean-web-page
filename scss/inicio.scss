@@ -1,0 +1,74 @@
+.in {
+
+    main .carousel img {
+        height: 430px;
+    }
+    
+    .container{
+
+        margin-top: 50px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+        
+
+        img {
+        align-items: center;
+        border-radius: 25px;
+        width: 400px;
+        height: 200px;
+        }
+    }
+
+    .intro {
+        margin: 10px 100px;
+
+        h1{text-align: center;}
+    }
+
+    .servicios {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .cont-servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin: 100px 0px;
+        
+        .servicio-empresas ,.servicio-oficinas ,.servicio-consorcio{
+            text-align: center;
+
+            i {
+                font-size: 110px;
+            }
+        }
+
+        // eliminar desp//
+        .servicio-empresas {
+            background-color: #0e4c9c3f;
+        }
+    }
+    .servicios-desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin: 100px;
+        
+        li {
+            font-size: 20px;
+            color: $secundary;
+        }
+        img {
+            height: 500px;
+            width: 300px;
+        }
+    }
+
+
+
+}
+
