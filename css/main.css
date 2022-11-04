@@ -1,6 +1,30 @@
-nav img {
-  width: 50px;
-  height: 50px; }
+footer {
+  background-color: #9f9f9a; }
+  footer .container {
+    padding-top: 50px;
+    margin-top: 20px; }
+  footer p {
+    margin: 0; }
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer i {
+    color: black; }
+  footer .texto-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    footer .texto-footer img {
+      width: 75px;
+      height: 75px; }
+  footer .contacto-footer {
+    margin-top: -25px; }
+    footer .contacto-footer .telefono-insta {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+    footer .contacto-footer .mail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
 
 h1 {
   font-size: 72px;
@@ -31,52 +55,59 @@ h6, p {
 body {
   background-color: #f5f4e1; }
 
+a {
+  text-decoration: none; }
+
+nav img {
+  width: 50px;
+  height: 50px; }
+
 .in main .presentacion .carousel img {
   height: 430px; }
 
-.in .container {
+.in main .container {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
-  .in .container img {
+  .in main .container img {
     align-items: center;
     border-radius: 25px;
     width: 400px;
     height: 200px; }
 
-.in .intro {
+.in main .intro {
   margin: 10px 100px; }
-  .in .intro h1 {
+  .in main .intro h1 {
     text-align: center; }
 
-.in .servicios {
+.in main .servicios {
   margin-top: 50px;
   text-align: center; }
 
-.in .cont-servicios {
+.in main .cont-servicios {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 100px 0px; }
-  .in .cont-servicios .servicio-empresas, .in .cont-servicios .servicio-oficinas, .in .cont-servicios .servicio-consorcio {
+  .in main .cont-servicios .servicio-empresas, .in main .cont-servicios .servicio-oficinas, .in main .cont-servicios .servicio-consorcio {
     text-align: center; }
-    .in .cont-servicios .servicio-empresas i, .in .cont-servicios .servicio-oficinas i, .in .cont-servicios .servicio-consorcio i {
+    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-oficinas i, .in main .cont-servicios .servicio-consorcio i {
       font-size: 110px; }
-  .in .cont-servicios .servicio-empresas {
+  .in main .cont-servicios .servicio-empresas {
     background-color: #0e4c9c3f; }
 
-.in .servicios-desc {
+.in main .servicios-desc {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 100px; }
-  .in .servicios-desc li {
+  .in main .servicios-desc li {
     font-size: 20px;
     color: #0e4b9c; }
-  .in .servicios-desc img {
+  .in main .servicios-desc img {
     height: 500px;
     width: 300px; }
 
-.in .clientes {
+.in main .clientes {
   text-align: center; }
