@@ -12,8 +12,13 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    footer .texto-footer img {
+    footer .texto-footer h4 {
+      margin: 10px; }
+    footer .texto-footer .iron-crean-img-footer {
       width: 75px;
+      height: 75px; }
+    footer .texto-footer .adel-img-footer {
+      width: 100px;
       height: 75px; }
   footer .contacto-footer {
     margin-top: -25px; }
@@ -29,13 +34,14 @@ footer {
 h1 {
   font-size: 72px;
   font-family: serif;
-  color: #BB4747;
-  margin: 50px; }
+  color: #bb4747;
+  margin: 50px;
+  text-align: center; }
 
 h2 {
   font-size: 55px;
   font-family: serif;
-  color: #BB4747;
+  color: #bb4747;
   margin: 30px; }
 
 h3 {
@@ -66,10 +72,11 @@ nav img {
   height: 430px; }
 
 .in main .container {
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px; }
   .in main .container img {
     align-items: center;
     border-radius: 25px;
@@ -81,7 +88,7 @@ nav img {
   .in main .intro h1 {
     text-align: center; }
 
-.in main .servicios {
+.in main .servicios h2 {
   margin-top: 50px;
   text-align: center; }
 
@@ -89,11 +96,11 @@ nav img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 100px 0px; }
-  .in main .cont-servicios .servicio-empresas, .in main .cont-servicios .servicio-oficinas, .in main .cont-servicios .servicio-consorcio {
+  margin-bottom: 50px; }
+  .in main .cont-servicios .servicio-empresas p, .in main .cont-servicios .servicio-oficinas p, .in main .cont-servicios .servicio-consorcio p {
     text-align: center; }
-    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-oficinas i, .in main .cont-servicios .servicio-consorcio i {
-      font-size: 110px; }
+  .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-oficinas i, .in main .cont-servicios .servicio-consorcio i {
+    font-size: 110px; }
   .in main .cont-servicios .servicio-empresas {
     background-color: #0e4c9c3f; }
 
@@ -102,12 +109,81 @@ nav img {
   flex-direction: row;
   justify-content: space-around;
   margin: 100px; }
+  .in main .servicios-desc ul {
+    margin-left: 10vh; }
   .in main .servicios-desc li {
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
     color: #0e4b9c; }
   .in main .servicios-desc img {
     height: 500px;
-    width: 300px; }
+    width: 400px; }
+  .in main .servicios-desc h2 {
+    margin-top: 0px; }
+
+.in main .prologo {
+  margin: 200px 0px 100px 0px;
+  padding: 100px 50px;
+  background-image: url(../images/servicio-limpieza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .in main .prologo p {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 8px #7c7c7c; }
 
 .in main .clientes {
   text-align: center; }
+
+.eq main h1, .eq main h2 {
+  text-align: center; }
+
+.eq main .row img {
+  width: 100%;
+  height: 300px; }
+
+.eq main .row {
+  margin-top: 100px; }
+
+.eq main .container {
+  margin: 100px; }
+
+.eq main .carousel img {
+  width: 100%;
+  height: 450px; }
+
+.eq main .carousel h5, .eq main .carousel h6 {
+  color: white;
+  text-shadow: 0px 0px 8px #7c7c7c; }
+
+.eq main .container .col-7 {
+  text-align: center; }
+  .eq main .container .col-7 h2 {
+    margin-top: 0px; }
+
+.co .presentacion {
+  align-items: center; }
+  .co .presentacion img {
+    max-width: 100vw;
+    text-align: center; }
+
+.co .mapa-texto {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 100px; }
+
+.co .formulario {
+  margin: 30px;
+  padding: 15px;
+  border: 10px;
+  border-style: solid;
+  border-color: #bb4747; }
+  .co .formulario p {
+    font-size: 22px; }
+  .co .formulario input, .co .formulario select, .co .formulario textarea {
+    background-color: #f5f4e1;
+    border: 5px;
+    border-style: solid;
+    border-color: #bb4747;
+    width: 100%;
+    height: 100%; }

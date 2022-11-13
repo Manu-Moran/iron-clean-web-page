@@ -23,8 +23,17 @@ footer{
       align-items: center;
       justify-content: center;
 
-      img{
+      h4 {
+        margin: 10px;
+      }
+
+      .iron-crean-img-footer{
         width: 75px;
+        height: 75px;
+      }
+
+      .adel-img-footer{
+        width: 100px;
         height: 75px;
       }
     }

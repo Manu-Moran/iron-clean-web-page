@@ -1,0 +1,50 @@
+.co{
+
+    .presentacion {
+        align-items: center;
+        
+    
+
+    img {
+        
+        max-width: 100vw;
+        text-align: center;
+    }
+    }
+
+    .mapa-texto {
+        display: flex;
+        flex-direction: row;
+
+        margin: 50px 100px;
+    }
+
+
+    .formulario {
+
+        margin: 30px;
+
+        padding: 15px;
+
+        border: 10px;
+        border-style: solid;
+        border-color: $primary;
+
+
+        p {
+            font-size: 22px;
+        }
+
+        input, select, textarea {
+            background-color: $tertiary;
+            
+            border: 5px;
+            border-style: solid;
+            border-color: $primary;
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

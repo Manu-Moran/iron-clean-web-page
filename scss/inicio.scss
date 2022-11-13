@@ -8,11 +8,13 @@ main{
     
     .container{
 
-        margin-top: 50px;
+        
 
         display: flex;
         flex-direction: row;
         justify-content: space-around ;
+        margin-top: 100px;
+        margin-bottom: 100px;
         
 
         img {
@@ -29,19 +31,21 @@ main{
         h1{text-align: center;}
     }
 
-    .servicios {
+    .servicios h2{
         margin-top: 50px;
         text-align: center;
+        
     }
     .cont-servicios{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
-        margin: 100px 0px;
+        margin-bottom: 50px;
         
         .servicio-empresas ,.servicio-oficinas ,.servicio-consorcio{
-            text-align: center;
+            p {text-align: center;}
+            
 
             i {
                 font-size: 110px;
@@ -60,13 +64,37 @@ main{
 
         margin: 100px;
         
+        ul {
+            margin-left: 10vh;
+        }
         li {
-            font-size: 20px;
+            font-size: 25px;
+            margin-bottom: 10px;
             color: $secundary;
         }
         img {
             height: 500px;
-            width: 300px;
+            width: 400px;
+        }
+        h2 {
+            margin-top: 0px;
+        }
+        
+        
+    }
+
+    .prologo {
+        margin: 200px 0px 100px 0px;
+        padding: 100px 50px;
+
+        background-image: url(../images/servicio-limpieza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        p {
+            font-size: 40px;
+            color: white;
+            text-shadow: 0px 0px 8px rgb(124, 124, 124),;
         }
     }
 

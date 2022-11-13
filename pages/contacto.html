@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+<div class="co">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
         <div class="container-fluid">
             <a href="../index.html"><img class="logo-nav" src="../images/logo.jpg" alt="Logo"></a>
           <a class="navbar-brand" href="../index.html">Inicio</a>
@@ -53,7 +54,113 @@
         </div>
       </nav>
 
-      <h1>contacto</h1>
+      <div class="presentacion d-flex justify-content-center">
+
+      <img src="../images/contacto.jpg" alt="contacto presentacion">
+
+      </div> 
+
+    <main>
+
+        <div class="container mapa-texto">
+          <iframe class="col-7" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1111.7178181261763!2d-58.53250865294233!3d-34.613573530154625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7309a1e888b%3A0x4fb59037f8920d5!2sIron%20Clean%20SA!5e0!3m2!1ses!2sar!4v1667950741000!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="col-5">
+            <ul>
+              <li>Gerente: Gustavo Testai</li>
+              <li>Telefono 1164692357 / 51956458</li>
+              <li>Gerente RRHH: Liliana Morel</li>
+              <li>Telefono 1137879767 / 51956458</li>
+              <li>Horario de oficina
+                Lunes - Viernes: 09:00 - 18:00</li>
+              <li>(011) 51956458</li>
+              <li>ironcleansa@gmail.com
+                administracion@ironcleansa.com.es</li>
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="formulario">
+
+        <form action="" method="" enctype="">
+
+          <div class="container">
+
+            <div class="row">
+
+              <div class="form-nombre col-6">
+
+                <p>
+                  <label for="" class="row">Nombre y Apellido</label>
+                  <input class="row" type="text" placeholder="Escribe tu nombre"> 
+                </p>
+
+              </div>
+
+
+              <div class="form-telefono col-6">
+
+                <p>
+                  <label for="" class="row">Telefono de Contacto</label>
+                  <input class="row" type="text" placeholder="Escribe tu telefono">
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="form-mail col-6">
+
+                <p>
+                  <label for="" class="row">Correo Electronico</label>
+                  <input class="row" type="text" placeholder="Escribe tu correo">
+                </p>
+
+              </div>
+
+
+              <div class="form-pais col-6">
+
+                <p>
+                  <label for="" class="row">Pais</label> 
+                  <select class="row" name="" id="">
+                      <option value="Argentina">Argentina</option>
+                      <option value="Uruguay">Uruguay</option> 
+                  </select>
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="form-asunto">
+
+              <p>
+                <label for="" class="row">Asunto</label>
+                <input class="row" type="text" placeholder="Escribe el asunto">
+              </p>
+
+            </div>
+
+
+            <div class="form-comentario">
+
+              <p>
+                <label for="" class="row">Comentario</label>
+                <textarea class="row" name="comentario" id="" cols="100" rows="3"></textarea>
+              </p> 
+
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+    </main>
+
 
       <footer>
 
@@ -75,11 +182,11 @@
             <div class="col-9">
               
               <div class="texto-footer">
-                <img src="../images/logo.jpg" alt="logo-Iron Clean">
+                <img class="iron-crean-img-footer" src="../images/logo.jpg" alt="logo-Iron Clean">
 
                 <h4>Iron Clean es miembro de Adel</h4>
 
-                <img src="../images/logo-adel.jpg" alt="logo-Adel">
+                <img class="adel-img-footer" src="../images/logo-adel.jpg" alt="logo-Adel">
               </div>
               
               <div class="container contacto-footer">
@@ -110,6 +217,7 @@
         </div>
 
       </footer>
+</div>
 </body>
 
 <!-- para el js y css del bootstrap -->
