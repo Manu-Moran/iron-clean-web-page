@@ -1,3 +1,45 @@
+h1 {
+  font-size: 72px;
+  font-family: serif;
+  color: #d63334;
+  margin: 50px;
+  text-align: center; }
+
+h2 {
+  font-size: 55px;
+  font-family: serif;
+  color: #d63334;
+  margin: 30px; }
+
+h3 {
+  font-size: 41px;
+  font-family: serif;
+  color: #d63334; }
+
+h4 {
+  font-size: 33px; }
+
+h5 {
+  font-size: 26px; }
+
+h6, p {
+  font-size: 20px;
+  color: #0e4b9c; }
+
+body {
+  background: #f5f4e1; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  background-color: #d63334; }
+  nav a, nav .nav-link {
+    color: white; }
+  nav img {
+    width: 50px;
+    height: 50px; }
+
 footer {
   background-color: #9f9f9a; }
   footer .container {
@@ -31,43 +73,6 @@ footer {
       flex-direction: row;
       justify-content: space-around; }
 
-h1 {
-  font-size: 72px;
-  font-family: serif;
-  color: #bb4747;
-  margin: 50px;
-  text-align: center; }
-
-h2 {
-  font-size: 55px;
-  font-family: serif;
-  color: #bb4747;
-  margin: 30px; }
-
-h3 {
-  font-size: 41px;
-  font-family: serif; }
-
-h4 {
-  font-size: 33px; }
-
-h5 {
-  font-size: 26px; }
-
-h6, p {
-  font-size: 20px;
-  color: #0e4b9c; }
-
-body {
-  background-color: #f5f4e1; }
-
-a {
-  text-decoration: none; }
-
-nav img {
-  width: 50px;
-  height: 50px; }
-
 .in main .presentacion .carousel img {
   height: 430px; }
 
@@ -86,11 +91,16 @@ nav img {
 .in main .intro {
   margin: 10px 100px; }
   .in main .intro h1 {
-    text-align: center; }
+    text-align: center;
+    background-color: #f5f4e1; }
+  .in main .intro p {
+    background-color: #f5f4e1;
+    padding: 20px; }
 
 .in main .servicios h2 {
   margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f4e1; }
 
 .in main .cont-servicios {
   display: flex;
@@ -177,13 +187,24 @@ nav img {
   padding: 15px;
   border: 10px;
   border-style: solid;
-  border-color: #bb4747; }
+  border-color: #0e4b9c; }
   .co .formulario p {
     font-size: 22px; }
   .co .formulario input, .co .formulario select, .co .formulario textarea {
-    background-color: #f5f4e1;
+    background-color: white;
     border: 5px;
     border-style: solid;
-    border-color: #bb4747;
+    border-color: black;
     width: 100%;
     height: 100%; }
+  .co .formulario .botton {
+    text-align: center; }
+    .co .formulario .botton button {
+      background-color: #d63334;
+      border: 3px;
+      border-style: solid;
+      border-color: #d63334;
+      border-radius: 10px;
+      font-size: 24px;
+      color: white;
+      padding: 5px 10px 5px 10px; }

@@ -28,12 +28,19 @@ main{
     .intro {
         margin: 10px 100px;
 
-        h1{text-align: center;}
+        h1{text-align: center;
+        background-color: $tertiary;}
+
+        p {
+            background-color: $tertiary;
+            padding: 20px;
+        }
     }
 
     .servicios h2{
         margin-top: 50px;
         text-align: center;
+        background-color: $tertiary;
         
     }
     .cont-servicios{

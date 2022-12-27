@@ -28,22 +28,41 @@
 
         border: 10px;
         border-style: solid;
-        border-color: $primary;
+        border-color: $secundary;
+        
 
 
         p {
             font-size: 22px;
         }
 
-        input, select, textarea {
-            background-color: $tertiary;
+        input, select, textarea{
+            background-color: white;
             
             border: 5px;
             border-style: solid;
-            border-color: $primary;
+            border-color: black;
 
             width: 100%;
             height: 100%;
+        }
+
+        .botton{
+          text-align: center;
+
+          button{
+            background-color: $primary;
+
+            border: 3px;
+            border-style: solid;
+            border-color: $primary;
+
+            border-radius: 10px;
+
+            font-size: 24px;
+            color: white;
+            padding: 5px 10px 5px 10px;
+          }
         }
     }
 

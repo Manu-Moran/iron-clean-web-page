@@ -1,6 +1,9 @@
-$primary:#bb4747;
+// $primary:#bb4747;
+$primary:#d63334;
+
 $secundary:#0e4b9c;
 $tertiary: #f5f4e1;
+$primary2: #ae5c43;
 
 //idea
 // h1, h2, h3, h4, h5, h6, p {
@@ -26,6 +29,7 @@ h2 {
 h3 {
     font-size: 41px;
     font-family: serif;
+    color: $primary;
 
     
 }
@@ -47,13 +51,20 @@ h6 ,p {
 }
 
 body {
-      background-color: $tertiary;
-}
+    background: $tertiary;
+};
 
 a {text-decoration: none}
 
 
 nav {
+
+    background-color: $primary;
+    
+    a, .nav-link{
+        color: white;
+    }
+
     img {
       width: 50px;
       height: 50px;
