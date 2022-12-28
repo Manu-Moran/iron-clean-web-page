@@ -1,14 +1,14 @@
 // $primary:#bb4747;
 $primary:#d63334;
-
 $secundary:#0e4b9c;
-$tertiary: #f5f4e1;
+// $tertiary: #f5f4e1;
+$tertiary: #ffffff;
 $primary2: #ae5c43;
 
-//idea
-// h1, h2, h3, h4, h5, h6, p {
-//     background-color: white;
-// }
+
+//  h1, h2, h3, h4, h5, h6, p {
+//      background-color: white;
+//  };
 
 h1 {
     font-size: 72px;
@@ -44,6 +44,7 @@ h5 {
     
 }
 h6 ,p {
+    
     font-size: 20px;
     color: $secundary;
 
@@ -51,7 +52,7 @@ h6 ,p {
 }
 
 body {
-    background: $tertiary;
+    background: white;
 };
 
 a {text-decoration: none}

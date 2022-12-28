@@ -27,7 +27,7 @@ h6, p {
   color: #0e4b9c; }
 
 body {
-  background: #f5f4e1; }
+  background: white; }
 
 a {
   text-decoration: none; }
@@ -92,15 +92,15 @@ footer {
   margin: 10px 100px; }
   .in main .intro h1 {
     text-align: center;
-    background-color: #f5f4e1; }
+    background-color: #ffffff; }
   .in main .intro p {
-    background-color: #f5f4e1;
+    background-color: #ffffff;
     padding: 20px; }
 
 .in main .servicios h2 {
   margin-top: 50px;
   text-align: center;
-  background-color: #f5f4e1; }
+  background-color: #ffffff; }
 
 .in main .cont-servicios {
   display: flex;
