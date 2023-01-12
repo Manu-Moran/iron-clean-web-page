@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="in">
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav id="nav-bar-bootstrap" class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <a href="index.html"><img class="logo-nav" src="images/logo.jpg" alt="Logo"></a>
           <a class="navbar-brand" href="index.html">Inicio</a>
@@ -54,6 +54,29 @@
         </div>
       </nav>
 
+      
+  <div id="nav-bar-humilde" class="nav2">
+    <div class="container">
+    <div class="row">
+      <div class="col-3 text-end">
+        <a href="index.html"><img class="logo-nav" src="images/logo.jpg" alt="Logo"></a>
+      </div>
+      <div class="col-6 text-center">
+        <a href="index.html">Inicio</a>
+        <a href="pages/equipo.html">Equipo</a>
+        <a href="pages/clientes.html">Clientes</a>
+        <a href="pages/nosotros.html">Nosotros</a>
+        <a href="pages/contacto.html">Contacto</a>
+      </div>
+      <div class="col-3 text-start telefono">
+        <p><i class="fa-solid fa-phone"></i>  47-6969 8008</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
       <main>
         <div class="presentacion">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -87,8 +110,9 @@
         
 
       <div class="intro">
-        <h1> Iron Clean</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ab voluptas aperiam nesciunt fugiat, ullam dolorum quas illum, facere nam quam non! Quis harum consectetur deserunt et corrupti dolore minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, consequuntur dolor, magni hic, laboriosam eaque id reiciendis quia fugit ullam beatae facere atque commodi officia earum aliquam pariatur voluptatem </p>
+        <p> <span class="rojo">Iron Clean S.A.</span> pone a su disposición, profesionales integrales para el aseo y limpieza en hogares y oficinas. Nuestros exigentes procesos de selección y capacitación, hacen de nuestra oferta de valor una solución ideal para la limpieza de casas, limpieza de departamentos, limpieza de empresas, limpieza de oficinas y limpieza de locales. 
+
+          Además, dentro de nuestro amplio catálogo de servicios especializados, también podrán encontrar profesionales con experiencia en mantenimientos locativos para tu hogar, oficina o industria </p>
       </div>
         
       <div class="container">
@@ -110,44 +134,96 @@
 
         <div class="cont-servicios">
 
-          <div class="servicio-empresas">
-            <i class="fa-solid fa-industry"></i>
+          <div id= "1" onclick="mostrarEmpresas()" class="servicio-empresas">
+            <i id="1-1" class="fa-solid fa-industry"></i>
             <p>empresas</p>
           </div>
 
-          <div class="servicio-oficinas">
-            <i class="fa-solid fa-wrench"></i>
+          <div id= "2" onclick="mostrarMantenimiento()" class="servicio-mantenimiento">
+            <i id="2-1" class="fa-solid fa-wrench"></i>
             <p>mantenimiento</p>
           </div>
 
-          <div class="servicio-consorcio">
-            <i class="fa-solid fa-house"></i>
+          <div id= "3" onclick="mostrarHogar()" class="servicio-hogar">
+            <i id="3-1" class="fa-solid fa-house"></i>
             <p>casas</p>
           </div>
         </div>
 
-        <div class="servicios-desc">
-          <div>
+          <!-- ---------- -->
+
+        <div>
+          <section id="empresas">
+          <div class="servicios-desc">
+
+            <div class="descripciones">
               <h3>Servicio para empresas:</h3>
-            <ul>
-              <li>caracteristica 1</li>
-              <li>caracteristica 2</li>
-              <li>caracteristica 3</li>
-              <li>caracteristica 4</li>
-              <li>caracteristica 5</li>
-            </ul>
-          </div>
+              <ul>
+                <li>Limpieza y desinfección de baños</li>
+                <li>Limpieza de escritorios y mobiliarios</li>
+                <li>Limpieza de pasillos, escaleras y espacios comunes</li>
+                <li>Limpieza de vidrios y paredes interiores</li>
+                <li>Recolección y depósito de basura</li>
+              </ul>
+            </div>
           
-          <div>
-            <img src="images/duck1.jpg" alt="">
+            <div>
+              <img src="images/duck1.jpg" alt="empresas">
+            </div>
           </div>
-          
+          </section>
+
+          <!-- ---------- -->
+
+          <section id="mantenimiento">
+          <div class="servicios-desc desc-mantenimiento">
+
+            <div class="descripciones">
+              <h3>Servicio de mantenimiento:</h3>
+              <ul>
+                <li>mantenimiento 1</li>
+                <li>mantenimiento 2</li>
+                <li>mantenimiento 3 (no hay imaginacion)</li>      
+              </ul>
+            </div>
+      
+            <div>
+              <img src="images/duck2.jpg" alt="mantenimiento">
+            </div>
+          </div>
+          </section>
+
+          <!-- ---------- -->
+
+          <section id="hogar">
+          <div class="servicios-desc desc-hogar">
+
+            <div class="descripciones">
+              <h3>Servicio para el hogar:</h3>
+              <ul>
+                <li>Limpieza y desinfección de baños y cocinas</li>
+                <li>Limpieza de habitaciones, salas y zonas comunes</li>
+                <li>Servicio de limpieza de cocina básica y sencilla</li>
+                <li>Recolección y depósito de basuras</li>
+                <li>Lavado de ropa</li>
+                <li>Planchado de ropa</li>
+              </ul>
+            </div>
+      
+            <div>
+              <img src="images/duck3.jpg" alt="hogar">
+            </div>
+          </div>
+          </section>
+
+
         </div>
       </div>
 
 
       <div class="prologo">
-        
+        <h4>Nuestra mision:</h4>
+
         <p>Deseamos posicionarnos como un servicio de aseo y limpieza distinto a cualquier otra empresa del rubro en cuanto a soluciones, compromiso y cercanía con nuestros clientes y colaboradores. </p>
 
       </div>
@@ -244,5 +320,7 @@
 
 <!-- para el js y css del bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
 
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   font-size: 72px;
   font-family: serif;
@@ -27,7 +28,7 @@ h6, p {
   color: #0e4b9c; }
 
 body {
-  background: white; }
+  background-color: #ffffff; }
 
 a {
   text-decoration: none; }
@@ -39,6 +40,48 @@ nav {
   nav img {
     width: 50px;
     height: 50px; }
+
+.nav2 {
+  background-color: #d63334;
+  height: 66px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 99; }
+  .nav2 img {
+    height: 50px;
+    width: 50px;
+    margin-right: 50px; }
+  .nav2 .col-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .nav2 .col-6 a {
+      font-size: 25px;
+      color: #ffffff; }
+    .nav2 .col-6 a:hover {
+      color: #fdb926;
+      background-color: hwb(0 100% 0%/0.02); }
+  .nav2 .telefono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px; }
+    .nav2 .telefono p {
+      margin: 0px;
+      color: white; }
+    .nav2 .telefono i {
+      padding-right: 5px; }
+
+@media screen and (min-width: 769px) {
+  #nav-bar-bootstrap {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  #nav-bar-humilde {
+    display: none; } }
 
 footer {
   background-color: #9f9f9a; }
@@ -90,12 +133,13 @@ footer {
 
 .in main .intro {
   margin: 10px 100px; }
-  .in main .intro h1 {
-    text-align: center;
-    background-color: #ffffff; }
   .in main .intro p {
     background-color: #ffffff;
     padding: 20px; }
+    .in main .intro p .rojo {
+      color: #d63334;
+      font-size: larger;
+      font-weight: bold; }
 
 .in main .servicios h2 {
   margin-top: 50px;
@@ -106,37 +150,61 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 50px; }
-  .in main .cont-servicios .servicio-empresas p, .in main .cont-servicios .servicio-oficinas p, .in main .cont-servicios .servicio-consorcio p {
-    text-align: center; }
-  .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-oficinas i, .in main .cont-servicios .servicio-consorcio i {
-    font-size: 110px; }
-  .in main .cont-servicios .servicio-empresas {
-    background-color: #0e4c9c3f; }
+  padding-left: 100px;
+  padding-right: 100px; }
+  .in main .cont-servicios .servicio-empresas, .in main .cont-servicios .servicio-mantenimiento, .in main .cont-servicios .servicio-hogar {
+    cursor: pointer; }
+    .in main .cont-servicios .servicio-empresas p, .in main .cont-servicios .servicio-mantenimiento p, .in main .cont-servicios .servicio-hogar p {
+      text-align: center;
+      animation-name: rawr; }
+    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-mantenimiento i, .in main .cont-servicios .servicio-hogar i {
+      font-size: 110px; }
+    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-mantenimiento i, .in main .cont-servicios .servicio-hogar i {
+      background-size: contain;
+      background-repeat: no-repeat;
+      align-content: center;
+      padding: 50px; }
+  .in main .cont-servicios .servicio-empresas i {
+    background-image: url(../images/rombo.png); }
+  .in main .cont-servicios .servicio-hogar i {
+    padding: 45px 43.13px 55px 43.13px; }
 
 .in main .servicios-desc {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 100px; }
-  .in main .servicios-desc ul {
-    margin-left: 10vh; }
+  margin: 0px 100px 100px 100px;
+  list-style-position: outside; }
+  .in main .servicios-desc .descripciones {
+    width: 600px; }
   .in main .servicios-desc li {
     font-size: 25px;
-    margin-bottom: 10px;
-    color: #0e4b9c; }
+    margin-bottom: 30px;
+    color: #0e4b9c;
+    padding-left: 15px;
+    list-style-type: "▷"; }
   .in main .servicios-desc img {
     height: 500px;
     width: 400px; }
-  .in main .servicios-desc h2 {
-    margin-top: 0px; }
+  .in main .servicios-desc h3 {
+    margin-top: 0px;
+    margin-bottom: 40px; }
+
+.in main #mantenimiento, .in main #hogar {
+  display: none; }
 
 .in main .prologo {
   margin: 200px 0px 100px 0px;
-  padding: 100px 50px;
+  padding: 150px 100px;
   background-image: url(../images/servicio-limpieza.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
+  .in main .prologo h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 8px #7c7c7c; }
   .in main .prologo p {
     font-size: 40px;
     color: white;
@@ -144,6 +212,10 @@ footer {
 
 .in main .clientes {
   text-align: center; }
+
+@keyframes rawr {
+  100% {
+    transform: translateY(50px); } }
 
 .eq main h1, .eq main h2 {
   text-align: center; }
