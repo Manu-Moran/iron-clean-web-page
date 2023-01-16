@@ -1,0 +1,50 @@
+.cl{
+
+    *{
+        box-sizing: border-box;
+    }
+
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+
+    img{
+        width: 100%;
+        
+    }
+
+    .fila{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .columna{
+        flex: 25%;
+        padding: 5px;
+
+        img{
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .columna{
+            flex: 50%;
+        }
+    }
+   
+   
+   
+    @media screen and (max-width: 600px){
+        .columna{
+            flex: 100%;
+        }
+    }
+}
+
+

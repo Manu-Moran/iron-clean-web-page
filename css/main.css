@@ -74,6 +74,10 @@ nav {
       color: white; }
     .nav2 .telefono i {
       padding-right: 5px; }
+  .nav2 .elegido {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0) rgba(255, 0, 0, 0) white rgba(255, 0, 0, 0); }
 
 @media screen and (min-width: 769px) {
   #nav-bar-bootstrap {
@@ -132,14 +136,20 @@ footer {
     height: 200px; }
 
 .in main .intro {
+  display: flex;
+  flex-direction: row;
   margin: 10px 100px; }
   .in main .intro p {
+    font-size: x-large;
     background-color: #ffffff;
     padding: 20px; }
     .in main .intro p .rojo {
       color: #d63334;
-      font-size: larger;
+      font-size: xx-large;
       font-weight: bold; }
+  .in main .intro img {
+    border-radius: 10%;
+    margin: 20px; }
 
 .in main .servicios h2 {
   margin-top: 50px;
@@ -242,6 +252,35 @@ footer {
   text-align: center; }
   .eq main .container .col-7 h2 {
     margin-top: 0px; }
+
+.cl * {
+  box-sizing: border-box; }
+
+.cl body {
+  margin: 0px;
+  padding: 0px; }
+
+.cl img {
+  width: 100%; }
+
+.cl .fila {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px; }
+
+.cl .columna {
+  flex: 25%;
+  padding: 5px; }
+  .cl .columna img {
+    margin-top: 5px; }
+
+@media screen and (max-width: 1000px) {
+  .cl .columna {
+    flex: 50%; } }
+
+@media screen and (max-width: 600px) {
+  .cl .columna {
+    flex: 100%; } }
 
 .co .presentacion {
   align-items: center; }

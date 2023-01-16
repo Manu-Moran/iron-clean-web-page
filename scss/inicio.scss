@@ -23,19 +23,30 @@ main{
     }
 
     .intro {
+        display: flex;
+        flex-direction: row;
+
+
         margin: 10px 100px;
 
-        
-
         p {
+            font-size: x-large;
+
             .rojo{
                 color: $primary;
-                font-size: larger;
+                font-size: xx-large;
                 font-weight: bold;
             }
             background-color: $tertiary;
             padding: 20px;
         }
+
+        img{
+            border-radius: 10%;
+            
+            margin: 20px;
+        }
+
     }
 
     .servicios h2{
