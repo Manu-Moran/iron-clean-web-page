@@ -27,24 +27,26 @@ main{
         flex-direction: row;
 
 
-        margin: 10px 100px;
+        margin: 10px 150px;
 
-        p {
-            font-size: x-large;
+        div {
+
+            margin: 20px;
+
+            p{font-size: x-large;
+            margin: 0;}
 
             .rojo{
                 color: $primary;
                 font-size: xx-large;
                 font-weight: bold;
             }
-            background-color: $tertiary;
-            padding: 20px;
         }
 
         img{
-            border-radius: 10%;
+            border-radius: 5%;
             
-            margin: 20px;
+            margin: 10px 50px;
         }
 
     }

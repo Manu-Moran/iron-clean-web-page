@@ -88,37 +88,36 @@ nav {
     display: none; } }
 
 footer {
-  background-color: #9f9f9a; }
-  footer .container {
-    padding-top: 50px;
-    margin-top: 20px; }
+  margin-top: 50px;
+  box-shadow: inset 0px 200px 14px -180px white;
+  background-image: url("../images/triangle.png");
+  background-size: cover;
+  padding: 50px 25px 25px 25px; }
   footer p {
     margin: 0; }
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer i {
-    color: black; }
-  footer .texto-footer {
+    color: black;
+    text-shadow: 0px 0px 15px #9b9b9b; }
+  footer .contacto-footer {
+    text-align: center; }
+  footer .redes-footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    footer .texto-footer h4 {
-      margin: 10px; }
-    footer .texto-footer .iron-crean-img-footer {
-      width: 75px;
-      height: 75px; }
-    footer .texto-footer .adel-img-footer {
-      width: 100px;
-      height: 75px; }
-  footer .contacto-footer {
-    margin-top: -25px; }
-    footer .contacto-footer .telefono-insta {
+    justify-content: center;
+    font-size: xx-large;
+    align-items: center; }
+    footer .redes-footer .item-redes-footer {
+      aspect-ratio: 1/1;
+      border: 2px solid black;
+      height: 75px;
+      margin: 50px 25px 20px 25px;
+      box-shadow: inset 0px 0px 5px #6e6e6e;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-    footer .contacto-footer .mail {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
+      align-items: center;
+      justify-content: center; }
+      footer .redes-footer .item-redes-footer h5 {
+        font-size: 40px;
+        margin: 0px; }
 
 .in main .presentacion .carousel img {
   height: 430px; }
@@ -138,18 +137,19 @@ footer {
 .in main .intro {
   display: flex;
   flex-direction: row;
-  margin: 10px 100px; }
-  .in main .intro p {
-    font-size: x-large;
-    background-color: #ffffff;
-    padding: 20px; }
-    .in main .intro p .rojo {
+  margin: 10px 150px; }
+  .in main .intro div {
+    margin: 20px; }
+    .in main .intro div p {
+      font-size: x-large;
+      margin: 0; }
+    .in main .intro div .rojo {
       color: #d63334;
       font-size: xx-large;
       font-weight: bold; }
   .in main .intro img {
-    border-radius: 10%;
-    margin: 20px; }
+    border-radius: 5%;
+    margin: 10px 50px; }
 
 .in main .servicios h2 {
   margin-top: 50px;

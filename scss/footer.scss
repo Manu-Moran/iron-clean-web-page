@@ -1,9 +1,13 @@
 footer{
+  margin-top: 50px;
+  box-shadow: inset 0px 200px 14px -180px rgba(255,255,255,1);
+  background-image: url("../images/triangle.png");
+  background-size: cover;
+  padding: 50px 25px 25px 25px;
 
-  .container {
-    padding-top: 50px;
-    margin-top: 20px;
-  }
+
+  
+  
 
 
   p {
@@ -11,50 +15,40 @@ footer{
   }
 
   h1, h2, h3, h4, h5, h6, p, i{
-    color: black;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 15px rgb(155, 155, 155),
   }
   
-   background-color:  #9f9f9a;
-  
+    .contacto-footer{
+      text-align: center;
+    }
 
-
-    .texto-footer {
-
+    .redes-footer{
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: center;
 
-      h4 {
-        margin: 10px;
-      }
-
-      .iron-crean-img-footer{
-        width: 75px;
+      font-size: xx-large;
+      align-items: center;
+      
+      .item-redes-footer{
+        aspect-ratio: 1/1;
+        border: 2px solid black;
         height: 75px;
-      }
+        margin: 50px 25px 20px 25px;
+        
+        box-shadow: inset 0px 0px 5px rgb(110, 110, 110);
 
-      .adel-img-footer{
-        width: 100px;
-        height: 75px;
-      }
-    }
-
-    .contacto-footer{
-      margin-top: -25px;
-      .telefono-insta{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+
+        h5{
+          font-size: 40px;
+          margin: 0px;
+        }
       }
 
-      .mail{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
     }
-
-    
 
 }
