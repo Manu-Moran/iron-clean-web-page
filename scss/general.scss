@@ -1,14 +1,8 @@
-// $primary:#bb4747;
 $primary:#d63334;
 $secundary:#0e4b9c;
-// $tertiary: #f5f4e1;
 $tertiary: #ffffff;
 $primary2: #ae5c43;
 
-
-//  h1, h2, h3, h4, h5, h6, p {
-//      background-color: white;
-//  };
 
 h1 {
     font-size: 72px;
@@ -61,7 +55,7 @@ a {text-decoration: none}
 nav {
 
     background-color: $primary;
-    
+    .navbar-brand, h6{color: white !important;}
     a, .nav-link{
         color: white;
     }
@@ -71,7 +65,6 @@ nav {
       height: 50px;
     };
 
-    // mandar todo al medio en <- === ->
 }
 
 .nav2 {
@@ -84,6 +77,12 @@ nav {
     top: 0;
     z-index: 99;
 
+    .grid-nav{
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+
+        
+    }
     img {
         height: 50px;
         width: 50px; 
@@ -91,7 +90,7 @@ nav {
         margin-right: 50px;
     }
 
-    .col-6{
+    .text-center{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -125,7 +124,7 @@ nav {
 
 
     .elegido{
-        border-width: 2px;
+        border-width: 0px 0px 2px 0px;
         border-style: solid;
         border-color: rgba(0, 0, 0, 0) rgba(255, 0, 0, 0) rgb(255, 255, 255) rgba(255, 0, 0, 0);
     }
@@ -133,16 +132,29 @@ nav {
 
 
 
-
+///desaparecen el nav de bootstrap y aparece el humilde
 @media screen and (min-width: 769px) {
     #nav-bar-bootstrap {
          display: none;
      }
 }
 
-
 @media screen and (max-width: 768px) {
     #nav-bar-humilde {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #nav-bar-humilde{
+        .telefono{
+            display: none;
+        }
+        .grid-nav{
+            grid-template-columns: 1fr 5fr;
+        }
+        .text-center{
+            padding-right: 50px;
+        }
     }
 }
