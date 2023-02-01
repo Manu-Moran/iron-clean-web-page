@@ -169,52 +169,92 @@ footer {
   text-align: center;
   background-color: #ffffff; }
 
-.in main .cont-servicios {
+.in main .servicios .cont-servicios {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-left: 100px;
   padding-right: 100px; }
-  .in main .cont-servicios .servicio-empresas, .in main .cont-servicios .servicio-mantenimiento, .in main .cont-servicios .servicio-hogar {
+  .in main .servicios .cont-servicios .servicio-empresas, .in main .servicios .cont-servicios .servicio-mantenimiento, .in main .servicios .cont-servicios .servicio-hogar {
     cursor: pointer; }
-    .in main .cont-servicios .servicio-empresas p, .in main .cont-servicios .servicio-mantenimiento p, .in main .cont-servicios .servicio-hogar p {
+    .in main .servicios .cont-servicios .servicio-empresas p, .in main .servicios .cont-servicios .servicio-mantenimiento p, .in main .servicios .cont-servicios .servicio-hogar p {
       text-align: center;
       animation-name: rawr; }
-    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-mantenimiento i, .in main .cont-servicios .servicio-hogar i {
+    .in main .servicios .cont-servicios .servicio-empresas i, .in main .servicios .cont-servicios .servicio-mantenimiento i, .in main .servicios .cont-servicios .servicio-hogar i {
       font-size: 110px; }
-    .in main .cont-servicios .servicio-empresas i, .in main .cont-servicios .servicio-mantenimiento i, .in main .cont-servicios .servicio-hogar i {
+    .in main .servicios .cont-servicios .servicio-empresas i, .in main .servicios .cont-servicios .servicio-mantenimiento i, .in main .servicios .cont-servicios .servicio-hogar i {
       background-size: contain;
       background-repeat: no-repeat;
       align-content: center;
       padding: 50px; }
-  .in main .cont-servicios .servicio-empresas i {
+  .in main .servicios .cont-servicios .servicio-empresas i {
     background-image: url(../images/rombo.png); }
-  .in main .cont-servicios .servicio-hogar i {
+  .in main .servicios .cont-servicios .servicio-hogar i {
     padding: 45px 43.13px 55px 43.13px; }
 
-.in main .servicios-desc {
+.in main .servicios .servicios-desc {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 0px 100px 100px 100px;
   list-style-position: outside; }
-  .in main .servicios-desc .descripciones {
+  .in main .servicios .servicios-desc .descripciones {
     width: 600px; }
-  .in main .servicios-desc li {
+  .in main .servicios .servicios-desc li {
     font-size: 25px;
     margin-bottom: 30px;
     color: #0e4b9c;
     padding-left: 15px;
     list-style-type: "▷"; }
-  .in main .servicios-desc img {
+  .in main .servicios .servicios-desc img {
     height: 500px;
     width: 400px; }
-  .in main .servicios-desc h3 {
+  .in main .servicios .servicios-desc h3 {
     margin-top: 0px;
     margin-bottom: 40px; }
 
-.in main #mantenimiento, .in main #hogar {
+.in main .servicios #mantenimiento, .in main .servicios #hogar {
   display: none; }
+
+.in main .servicios .cartas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .in main .servicios .cartas .carta {
+    width: 28vw;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #0e4b9c;
+    box-shadow: 0px 0px 10px 1px rgba(14, 75, 156, 0.75);
+    margin: 15px;
+    padding: 10px;
+    background-color: #ffffff; }
+    .in main .servicios .cartas .carta img {
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      margin-right: 10px;
+      transition: 0.2s;
+      border: 1.5px solid rgba(0, 0, 0, 0); }
+    .in main .servicios .cartas .carta h5 {
+      color: #d63334;
+      transition: 0.2s; }
+    .in main .servicios .cartas .carta p {
+      transition: 0.2s; }
+  .in main .servicios .cartas .carta:hover {
+    background-color: #0e4b9c;
+    opacity: 1;
+    background: linear-gradient(135deg, #0d428755 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #0d4287 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #0d428755 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #0d4287 25%, #0e4b9c 25%) 0px 0/20px 20px; }
+    .in main .servicios .cartas .carta:hover h5, .in main .servicios .cartas .carta:hover p {
+      transition: 0.3s;
+      color: white; }
+    .in main .servicios .cartas .carta:hover img {
+      transition: 0.3s;
+      border: 1.5px #0e4b9c;
+      border-style: dashed; }
 
 .in main .prologo {
   margin: 200px 0px 100px 0px;
@@ -235,10 +275,6 @@ footer {
 
 .in main .clientes {
   text-align: center; }
-
-@keyframes rawr {
-  100% {
-    transform: translateY(50px); } }
 
 .eq main h1, .eq main h2 {
   text-align: center; }
@@ -272,6 +308,15 @@ footer {
 .cl body {
   margin: 0px;
   padding: 0px; }
+
+.cl .selector-empresa {
+  margin: 0% 20%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(red, #d63334); }
 
 .cl img {
   width: 100%; }
