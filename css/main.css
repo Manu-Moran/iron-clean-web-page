@@ -133,7 +133,8 @@ footer {
         margin: 0px; }
 
 .in main .presentacion .carousel img {
-  height: 430px; }
+  width: 100vw;
+  height: 500px; }
 
 .in main .container {
   display: flex;
@@ -230,14 +231,15 @@ footer {
     box-shadow: 0px 0px 10px 1px rgba(14, 75, 156, 0.75);
     margin: 15px;
     padding: 10px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    transition: 0.2s; }
     .in main .servicios .cartas .carta img {
       background-color: white;
       width: 50px;
       height: 50px;
       padding: 5px;
       margin-right: 10px;
-      transition: 0.2s;
+      transition: 0.1s;
       border: 1.5px solid rgba(0, 0, 0, 0); }
     .in main .servicios .cartas .carta h5 {
       color: #d63334;
@@ -245,6 +247,8 @@ footer {
     .in main .servicios .cartas .carta p {
       transition: 0.2s; }
   .in main .servicios .cartas .carta:hover {
+    transition: 0.3s;
+    margin: 10px;
     background-color: #0e4b9c;
     opacity: 1;
     background: linear-gradient(135deg, #0d428755 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #0d4287 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #0d428755 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #0d4287 25%, #0e4b9c 25%) 0px 0/20px 20px; }
@@ -252,7 +256,7 @@ footer {
       transition: 0.3s;
       color: white; }
     .in main .servicios .cartas .carta:hover img {
-      transition: 0.3s;
+      transition: 0.1s;
       border: 1.5px #0e4b9c;
       border-style: dashed; }
 
@@ -276,18 +280,23 @@ footer {
 .in main .clientes {
   text-align: center; }
 
+.eq main body {
+  max-width: 100vw; }
+
+.eq main .pancarta {
+  max-width: 100%;
+  scale: initial; }
+
 .eq main h1, .eq main h2 {
   text-align: center; }
 
-.eq main .row img {
-  width: 100%;
-  height: 300px; }
-
-.eq main .row {
-  margin-top: 100px; }
-
-.eq main .container {
+.eq main .textos {
   margin: 100px; }
+  .eq main .textos .row {
+    margin-top: 100px; }
+    .eq main .textos .row img {
+      width: 100%;
+      height: 300px; }
 
 .eq main .carousel img {
   width: 100%;
@@ -297,9 +306,14 @@ footer {
   color: white;
   text-shadow: 0px 0px 8px #7c7c7c; }
 
-.eq main .container .col-7 {
+.eq main .textos2 .col-5 img {
+  width: 90%;
+  scale: initial; }
+
+.eq main .textos2 .col-7 {
+  align-self: center;
   text-align: center; }
-  .eq main .container .col-7 h2 {
+  .eq main .textos2 .col-7 h2 {
     margin-top: 0px; }
 
 .cl * {
@@ -343,7 +357,7 @@ footer {
 .co .presentacion {
   align-items: center; }
   .co .presentacion img {
-    max-width: 100vw;
+    width: 100vw;
     text-align: center; }
 
 .co .mapa-texto {

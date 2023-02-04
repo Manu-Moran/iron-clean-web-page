@@ -1,20 +1,32 @@
 .eq main{
+    body{
+        max-width: 100vw;
+    }
+    .pancarta{
+        max-width: 100%;
+        scale: initial;
+    }
 
     h1, h2 {
         text-align: center
     }
 
-    .row img{
-        width: 100%;
-        height: 300px;
+    .textos{
+        margin: 100px;
+
+        .row {
+            margin-top: 100px;
+
+            img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        
     }
 
-    .row {
-        margin-top: 100px;
-    }
-    .container {
-        margin: 100px;
-    }
+   
+
 
 
     .carousel{
@@ -30,8 +42,14 @@
         }
     }
 
-    .container {
+    .textos2 {
+
+        .col-5{
+            img{width: 90%;
+                scale: initial;}
+        }
         .col-7{
+            align-self: center;
             text-align: center;
 
             h2{

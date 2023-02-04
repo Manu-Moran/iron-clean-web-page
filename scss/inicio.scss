@@ -3,7 +3,9 @@
 main{
 
     .presentacion .carousel img {
-        height: 430px;
+        width: 100vw;
+        height: 500px;
+
     }
     
     .container{
@@ -145,7 +147,8 @@ main{
             margin: 15px;
             padding: 10px;
             background-color: #ffffff;
-
+            
+            transition: 0.2s;
             // transicion de cambio de vw (me parece divertido jeje
             
             img{
@@ -154,7 +157,7 @@ main{
             height: 50px;
             padding: 5px;
             margin-right: 10px;
-            transition: 0.2s;
+            transition: 0.1s;
             border: 1.5px solid rgba(0, 0, 0, 0);}
             
             h5{color: $primary;
@@ -166,7 +169,8 @@ main{
         }
 
         .carta:hover {
-            
+            transition: 0.3s;
+            margin: 10px;
             background-color: #0e4b9c;
             opacity: 1;
             background: linear-gradient(135deg, #0d428755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #0d4287 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #0d428755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #0d4287 25%, #0e4b9c 25%) 0px 0/ 20px 20px;
@@ -176,7 +180,7 @@ main{
             }
 
             img{
-                transition: 0.3s;
+                transition: 0.1s;
                 border: 1.5px $secundary;
                 border-style: dashed;
             }
@@ -215,6 +219,7 @@ main{
 
     .clientes {
         text-align: center;
+       
     }
 }
 
